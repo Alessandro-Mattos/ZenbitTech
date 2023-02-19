@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { updateName, updateEmail, updateMessage, resetForm } from "../../redux/contactFormSlice";
+
 
 
 import {Container, Title, Form, Label, Input, TextArea, Button} from './styles'
@@ -27,6 +28,7 @@ const ContactForm: React.FC = () => {
   const handleMessage = (e:React.ChangeEvent<HTMLTextAreaElement>) => { dispatch(updateMessage(e.target.value))}
 
   return (
+    
     <Container>
       <Title> Reach out to us!</Title>
       <Form onSubmit={onSubmit}>

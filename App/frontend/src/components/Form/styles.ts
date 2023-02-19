@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const Map = styled.div`
-
-`
 
 export const Container = styled.div`
   display: grid;
@@ -11,7 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
   max-width: 800px;
   padding: 40px;
-  background-color: #F9FAFB;
+  background-color: #FFFFFF;
 `;
 
 export const Title = styled.h1`

@@ -3,10 +3,17 @@ import store from "./redux/store";
 import styled from "styled-components";
 import ContactForm from "./components/Form/contactForm";
 import './App.css';
+import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
 * {
+  display: flex;
   box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  align-itens: center;
+  justify-content: space-between;
+  background-image: url('src/assets/clouds.svg')
   margin: 0;
   padding: 0;
  }
@@ -17,6 +24,7 @@ function App() {
     <Provider store={store}>
     <Container>
       <ContactForm />
+      <Footer />
     </Container>
     </Provider>
   );
