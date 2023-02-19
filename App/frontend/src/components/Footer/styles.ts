@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-  
- export const LinkWithIconWrapper = styled.a`
+
+export const LinkWithIconWrapper = styled.a `
  
  padding: 0px 20px;
  color: #666;
@@ -11,7 +11,7 @@ import styled from 'styled-components';
  }
 `;
 
-export const FooterLinks = styled.div`
+export const FooterLinks = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;

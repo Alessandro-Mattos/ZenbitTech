@@ -1,4 +1,4 @@
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
 import store from "./redux/store";
 import styled from "styled-components";
 import ContactForm from "./components/Form/ContactForm";
@@ -7,8 +7,7 @@ import Footer from "./components/Footer/Footer";
 import clouds from './assets/clouds.svg';
 import MapImage from "./components/Map/Map";
 
-
-const Container = styled.section`
+const Container = styled.section `
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -23,15 +22,15 @@ const Container = styled.section`
 `;
 
 function App() {
-  return (
-    <Provider store={store}>
-    <Container>
-      <ContactForm />
-      <MapImage />
-    </Container>
-    <Footer />
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <Container>
+                <ContactForm/>
+                <MapImage/>
+            </Container>
+            <Footer/>
+        </Provider>
+    );
 }
 
 export default App;
