@@ -9,8 +9,12 @@ class ContactController {
   public newForm = async (req: Request, res: Response):Promise<Response | undefined> => {
     const form = req.body as IContactForm;
     const formID = await this.contactService.newForm(form);
-
-    return res.status(201).json({message: `your form was registered under id:${formID}`});
+    if (!formID) { 
+      return res.status(201).json({message: `your form was registered under id:${formID}`}); 
+    } else {
+      return res.status(503).json({message: `Database is down, contact the administrator`});
+    }
+    
   };
 }
 
