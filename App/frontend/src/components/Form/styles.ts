@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin: 0 auto;
   max-width: 800px;
   padding: 40px;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF
+  pacity: 0%;
 `;
 
 export const Title = styled.h1`
@@ -23,6 +24,7 @@ export const Form = styled.form`
   grid-template-columns: 1fr;
   gap: 24px;
   margin-top: 24px;
+  
 `;
 
 export const Label = styled.label`

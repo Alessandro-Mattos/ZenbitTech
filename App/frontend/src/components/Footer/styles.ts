@@ -1,21 +1,26 @@
 import styled from 'styled-components';
   
  export const LinkWithIconWrapper = styled.a`
-    display: flex;
-    
-    justify-content: flex-start;
-    color: #666;
-    background-color: #FAFAFA;
-    text-decoration: none;
-    &:hover {
-      color: #333;
-    }
-  `;
-  
+ 
+ padding: 0px 20px;
+ color: #666;
+ background-color: #FAFAFA;
+ 
+ &:hover {
+   color: #333;
+ }
+`;
+
 export const FooterLinks = styled.div`
-    display: flex;
-    background-color: #FAFAFA;
-    flex-direction: row;
-    justify-content: flex-start;
-  `;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFA;
+  height: 90px;
+  width: 100%;
+  text-align: center;
+
+ 
+ background-color: #FAFAFA;
+
+`;

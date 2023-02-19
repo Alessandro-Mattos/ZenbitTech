@@ -17,7 +17,8 @@ const ContactForm: React.FC = () => {
     try {
       const response = await axios.post('http://localhost:4000/contact', data)
       console.log(response.status, response.data.message)
-      //dispatch(resetForm());
+      
+      dispatch(resetForm());
     } catch (err) {
       console.log(err)
     }
@@ -30,9 +31,9 @@ const ContactForm: React.FC = () => {
   return (
     
     <Container>
-      <Title> Reach out to us!</Title>
+      
       <Form onSubmit={onSubmit}>
-          
+      <Title> Reach out to us!</Title>
           <Label >
             <Input
               type="text"

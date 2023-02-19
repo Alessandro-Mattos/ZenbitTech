@@ -1,20 +1,21 @@
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import styled from "styled-components";
-import ContactForm from "./components/Form/contactForm";
+import ContactForm from "./components/Form/ContactForm";
 import './App.css';
 import Footer from "./components/Footer/Footer";
+import clouds from './assets/clouds.svg';
+import MapImage from "./components/Map/Map";
 
-const Container = styled.div`
+
+const Container = styled.section`
   display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url('src/assets/clouds.svg')
+  flex-direction: row;
+  align-items: left;
+  background-image: url(${clouds});
   margin: 0;
-  padding: 0;
+  padding: 1%;
 
   * {
     font-family: 'Apercu', sans-serif;
@@ -26,8 +27,9 @@ function App() {
     <Provider store={store}>
     <Container>
       <ContactForm />
-      <Footer />
+      <MapImage />
     </Container>
+    <Footer />
     </Provider>
   );
 }
