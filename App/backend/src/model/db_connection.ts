@@ -1,16 +1,15 @@
-import { createPool } from 'mysql2/promise';
+import {createPool} from 'mysql2/promise';
 import dotenv from 'dotenv';
 dotenv.config()
- 
 
 const db_connection = createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
 export default db_connection;
