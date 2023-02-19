@@ -7,7 +7,6 @@ import styled from 'styled-components';
     color: #666;
     background-color: #FAFAFA;
     text-decoration: none;
-  
     &:hover {
       color: #333;
     }
@@ -18,7 +17,5 @@ export const FooterLinks = styled.div`
     background-color: #FAFAFA;
     flex-direction: row;
     justify-content: flex-start;
-    
-
   `;
   

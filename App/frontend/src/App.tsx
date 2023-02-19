@@ -6,17 +6,19 @@ import './App.css';
 import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
-* {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  align-itens: center;
+  align-items: center;
   justify-content: space-between;
   background-image: url('src/assets/clouds.svg')
   margin: 0;
   padding: 0;
- }
+
+  * {
+    font-family: 'Apercu', sans-serif;
+  }
 `;
 
 function App() {
