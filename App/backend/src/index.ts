@@ -6,8 +6,8 @@ import cors from 'cors';
 
 const app = express();
 const route = Router();
-const PORT =  4000;
-const HOSTNAME = process.env.APP_HOSTNAME || 'http://localhost';
+const PORT =  process.env.PORT || 4000;
+const HOSTNAME = process.env.APP_HOSTNAME || 'localhost';
 app.use(cors());
 app.use(express.json());
 
